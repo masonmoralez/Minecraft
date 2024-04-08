@@ -23,7 +23,7 @@ PrefabInstance:
     - target: {fileID: 599432452693644931, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d9d3e8386b8a17e4f831387296f52704, type: 2}
+      objectReference: {fileID: 2100000, guid: 9e38b96c6260b47a1bf93c64ae061f09, type: 2}
     - target: {fileID: 1086148001245226580, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
       propertyPath: m_Name
       value: AcaciaLogBlock Variant
@@ -35,7 +35,7 @@ PrefabInstance:
     - target: {fileID: 4998265793676664096, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 20c993a00dff8114ab7db317ea44ef75, type: 2}
+      objectReference: {fileID: 2100000, guid: 892963cf9416944d39795102a6e76b55, type: 2}
     - target: {fileID: 5122491762408587929, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -91,7 +91,7 @@ PrefabInstance:
     - target: {fileID: 7701730523256375738, guid: 3bda2cca27fa245a2ae74f1de243a14b, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 20c993a00dff8114ab7db317ea44ef75, type: 2}
+      objectReference: {fileID: 2100000, guid: 892963cf9416944d39795102a6e76b55, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

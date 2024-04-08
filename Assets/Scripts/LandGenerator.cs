@@ -16,7 +16,7 @@ public class LandGenerator : MonoBehaviour
 
     [SerializeField] Landscape landscape;
 
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,9 +31,9 @@ public class LandGenerator : MonoBehaviour
         List<string> choices = new List<string>();
         for (int x = 0; x < length; x++)
         {
-            for(int z = 0; z < width; z++)
+            for (int z = 0; z < width; z++)
             {
-                for( int y = bedrockDepth; y < height; y++)
+                for (int y = bedrockDepth; y < height; y++)
                 {
                     Vector3Int pos = new Vector3Int(x, y, z);
                     chunkArray[pos] = null;
@@ -62,12 +62,12 @@ public class LandGenerator : MonoBehaviour
                             int index = Random.Range(0, choices.Count);
                             chunkArray[pos] = landscape.blocksDict[choices[index]].name;
                         }
-                        
+
                     }
                     else if (y < -10)
                     {
                         choices.Clear();
-                        choices = new List<string> { "stone", "sand", "coarse_dirt", "sandstone"};
+                        choices = new List<string> { "stone", "sand", "coarse_dirt", "sandstone" };
                         foreach (var label in choices) { Debug.Log(label); }
                         int index = Random.Range(0, choices.Count);
                         chunkArray[pos] = landscape.blocksDict[choices[index]].name;
@@ -80,7 +80,7 @@ public class LandGenerator : MonoBehaviour
                     {
                         chunkArray[pos] = landscape.blocksDict["grass"].name;
                     }
-                    
+
                 }
             }
         }
@@ -95,7 +95,7 @@ public class LandGenerator : MonoBehaviour
                 for (int y = -50; y < height; y++)
                 {
                     Vector3Int pos = new Vector3Int(x, y, z);
-                    foreach(var kvp in landscape.blocksDict)
+                    foreach (var kvp in landscape.blocksDict)
                     {
                         if (kvp.Value.name == null) { continue; }
                         if (kvp.Value.name == chunkArray[pos])
@@ -105,9 +105,9 @@ public class LandGenerator : MonoBehaviour
                                 kvp.Value.blockPrefab.transform.rotation);
                         }
                     }
-                    
-                    
-                   
+
+
+
 
                 }
             }
@@ -116,7 +116,7 @@ public class LandGenerator : MonoBehaviour
 
     void SpawnChunk2()
     {
-        foreach(var kvp in chunkArray)
+        foreach (var kvp in chunkArray)
         {
             if (kvp.Value != null)
             {
